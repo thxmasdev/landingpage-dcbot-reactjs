@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/* 🌌 GLOBAL */
 body {
   background: linear-gradient(to bottom, #1a1a2e, #16213e);
   color: white;
@@ -15,7 +14,6 @@ body {
   min-height: 100vh;
 }
 
-/* 🔵 NAVBAR */
 .navbar {
   background: rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -23,14 +21,14 @@ body {
 }
 
 .navbar-brand {
-  font-size: 1.8rem; /* Más grande */
+  font-size: 1.8rem;
   font-weight: bold;
   display: flex;
   align-items: center;
 }
 
 .navbar-brand svg {
-  font-size: 2rem; /* Icono más grande */
+  font-size: 2rem;
   margin-right: 8px;
 }
 
@@ -43,18 +41,16 @@ body {
   transform: scale(1.1);
 }
 
-/* 🚀 HEADER Y SEPARACIÓN */
 .py-4 {
-  padding-top: 2rem !important; /* Menos separación entre Header y Features */
+  padding-top: 2rem !important; 
   padding-bottom: 2rem !important;
 }
 
-/* 🔥 BOTONES MODERNOS */
 .modern-button-container {
   display: flex;
-  gap: 16px; /* Espaciado entre botones */
+  gap: 16px; 
   align-items: center;
-  flex-wrap: wrap; /* Asegurar que en responsive se mantengan en línea */
+  flex-wrap: wrap; 
 }
 
 .modern-button {
@@ -69,7 +65,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-width: 140px; /* Para que los botones tengan un tamaño uniforme */
+  min-width: 140px;
 }
 
 .modern-button.primary {
@@ -94,31 +90,29 @@ body {
   box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.5);
 }
 
-/* 📱 RESPONSIVE: Asegurar que los botones estén en línea */
 @media (max-width: 768px) {
   .modern-button-container {
-    flex-direction: row; /* Mantener en línea en dispositivos pequeños */
+    flex-direction: row;
     justify-content: center;
   }
 }
 
-/* 🎯 FEATURES */
 .section-title {
   font-size: 2.2rem;
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 30px;
-  color: white; /* Asegurar que se vea bien */
+  color: white; 
 }
 
 .feature-card {
   width: 100%;
-  max-width: 420px; /* Aumentado el tamaño */
-  min-height: 270px; /* Un poco más alto */
+  max-width: 420px; 
+  min-height: 270px; 
   padding: 25px;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease-in-out, filter 0.5s ease-in-out;
-  filter: brightness(0.8); /* Más claridad */
+  filter: brightness(0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,17 +121,15 @@ body {
 
 .feature-card:hover {
   filter: brightness(1);
-  box-shadow: 0px 15px 30px rgba(0, 255, 255, 0.6); /* Sombra más visible */
+  box-shadow: 0px 15px 30px rgba(0, 255, 255, 0.6);
 }
 
-/* 📱 RESPONSIVE: Ajuste en móviles */
 @media (max-width: 768px) {
   .feature-card {
-    margin-bottom: 25px; /* Más espacio en móviles */
+    margin-bottom: 25px;
   }
 }
 
-/* ⚫ FOOTER */
 .footer {
   margin-top: auto;
   background: rgba(0, 0, 0, 0.5);
@@ -146,7 +138,6 @@ body {
   color: #aaa;
 }
 
-/* 🔥 Estilo para el enlace de GitHub */
 .github-link {
     display: flex;
     align-items: center;
@@ -158,5 +149,5 @@ body {
   }
   
   .github-link:hover {
-    color: cyan; /* Efecto al pasar el mouse */
+    color: cyan;
   }
