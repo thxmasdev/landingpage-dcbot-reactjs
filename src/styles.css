@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* 🌌 GLOBAL */
+body {
+  background: linear-gradient(to bottom, #1a1a2e, #16213e);
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 🔵 NAVBAR */
+.navbar {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-size: 1.8rem; /* Más grande */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand svg {
+  font-size: 2rem; /* Icono más grande */
+  margin-right: 8px;
+}
+
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00c6ff !important;
+  transform: scale(1.1);
+}
+
+/* 🚀 HEADER Y SEPARACIÓN */
+.py-4 {
+  padding-top: 2rem !important; /* Menos separación entre Header y Features */
+  padding-bottom: 2rem !important;
+}
+
+/* 🔥 BOTONES MODERNOS */
+.modern-button-container {
+  display: flex;
+  gap: 16px; /* Espaciado entre botones */
+  align-items: center;
+  flex-wrap: wrap; /* Asegurar que en responsive se mantengan en línea */
+}
+
+.modern-button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 140px; /* Para que los botones tengan un tamaño uniforme */
+}
+
+.modern-button.primary {
+  background: linear-gradient(45deg, cyan, blue);
+  color: white;
+}
+
+.modern-button.secondary {
+  background: transparent;
+  border: 2px solid cyan;
+  color: cyan;
+}
+
+.modern-button.primary:hover {
+  background: linear-gradient(45deg, blue, cyan);
+  box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.5);
+}
+
+.modern-button.secondary:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.5);
+}
+
+/* 📱 RESPONSIVE: Asegurar que los botones estén en línea */
+@media (max-width: 768px) {
+  .modern-button-container {
+    flex-direction: row; /* Mantener en línea en dispositivos pequeños */
+    justify-content: center;
+  }
+}
+
+/* 🎯 FEATURES */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: white; /* Asegurar que se vea bien */
+}
+
+.feature-card {
+  width: 100%;
+  max-width: 420px; /* Aumentado el tamaño */
+  min-height: 270px; /* Un poco más alto */
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out, filter 0.5s ease-in-out;
+  filter: brightness(0.8); /* Más claridad */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-card:hover {
+  filter: brightness(1);
+  box-shadow: 0px 15px 30px rgba(0, 255, 255, 0.6); /* Sombra más visible */
+}
+
+/* 📱 RESPONSIVE: Ajuste en móviles */
+@media (max-width: 768px) {
+  .feature-card {
+    margin-bottom: 25px; /* Más espacio en móviles */
+  }
+}
+
+/* ⚫ FOOTER */
+.footer {
+  margin-top: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  color: #aaa;
+}
+
+/* 🔥 Estilo para el enlace de GitHub */
+.github-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .github-link:hover {
+    color: cyan; /* Efecto al pasar el mouse */
+  }
